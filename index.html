@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simulador de Misión Galáctica - Una aventura espacial interactiva">
+    <title>Exploración Galáctica - Simulador de Misión</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- BOOTCAMP FULL STACK JAVASCRIPT 0080 - EVALUACIÓN MÓDULO 03 -->
+<!-- ALUMNA: MACARENA ESPINOZA GATICA -->
+
+<body>
+    <div class="estrellas"></div>
+    <div class="estrellas2"></div>
+    <div class="estrellas3"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="EVALUACION DE MODULO 3">EVALUACIÓN DE MÓDULO 3</h1>
+            <p class="subtitle">Simulador de Misión Espacial</p>
+            <div class="hero-image">
+                <img src="assets/img/portada.png" alt="Nave Espacial Estrella del Alba">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Bienvenido a la Misión</h2>
+            <p>Embárcate en una aventura galáctica a bordo de la <strong>Estrella del Alba</strong>, una nave
+                exploradora modelo X-42 diseñada para misiones de largo alcance en el espacio profundo.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🌌🚀🪐</div>
+                <h3>Gestión de Nave</h3>
+                <p>Controla todos los aspectos de tu nave espacial, desde el estado de la misión hasta la distancia
+                    recorrida.</p>
+                <ul>
+                    <li>Nombre: Estrella del Alba</li>
+                    <li>Modelo: Explorador X-42</li>
+                    <li>Distancia: 15,000 años luz</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👩‍🚀🐱‍🚀👨‍🚀</div>
+                <h3>Tripulación</h3>
+                <p>Administra tu equipo de exploradores espaciales, cada uno con roles específicos y niveles de salud.
+                </p>
+                <ul>
+                    <li>Piloto</li>
+                    <li>Ingeniero Espacial</li>
+                    <li>Científica Nuclear</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡💧🍖</div>
+                <h3>Recursos Vitales</h3>
+                <p>Gestiona tres recursos críticos para la supervivencia de tu tripulación.</p>
+                <ul>
+                    <li>💧 Agua (100-150 unidades)</li>
+                    <li>🍖 Comida (100-150 unidades)</li>
+                    <li>⚡ Energía (100-150 unidades)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gameplay">
+            <h2>Cómo Funciona</h2>
+            <div class="gameplay-grid">
+                <div class="gameplay-step">
+                    <div class="step-number">1</div>
+                    <h4>Explorar</h4>
+                    <p>Descubre nuevos planetas y sistemas estelares. Consume recursos y puede generar eventos
+                        aleatorios que afecten a la tripulación.</p>
+                </div>
+
+                <div class="gameplay-step">
+                    <div class="step-number">2</div>
+                    <h4>Comer</h4>
+                    <p>Alimenta a tu tripulación para mejorar su salud. Cada tripulante consume 2 unidades de comida y
+                        recupera entre 5-15% de salud.</p>
+                </div>
+
+                <div class="gameplay-step">
+                    <div class="step-number">3</div>
+                    <h4>Descansar</h4>
+                    <p>Permite que tu equipo descanse para recuperarse. Consume energía pero restaura entre 10-25% de
+                        salud por tripulante.</p>
+                </div>
+
+                <div class="gameplay-step">
+                    <div class="step-number">4</div>
+                    <h4>Reportar</h4>
+                    <p>Obtén un informe completo del estado de la nave, recursos, tripulación y estadísticas de salud.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mechanics">
+            <h2>Mecánicas del Juego</h2>
+            <div class="mechanics-grid">
+                <div class="mechanic-card">
+                    <h4>🎲 Eventos Aleatorios</h4>
+                    <p>Durante la exploración, existe un 30% de probabilidad de que un tripulante sufra un accidente,
+                        perdiendo entre 5-20% de salud.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h4>📊 Sistema de Salud</h4>
+                    <p>Cada tripulante comienza con 80-100% de salud. Si todos llegan a 0%, la misión falla. Mantén a tu
+                        equipo saludable.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h4>⏱️ Duración de Misión</h4>
+                    <p>La simulación dura 10 días o hasta que se agoten los recursos o muera toda la tripulación.</p>
+                </div>
+
+                <div class="mechanic-card">
+                    <h4>⚠️ Condiciones de Fallo</h4>
+                    <p>La misión falla si: los recursos (agua, comida o energía) llegan a 0, o toda la tripulación
+                        muere.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>Estadísticas y Reportes</h2>
+            <div class="stats-content">
+                <p>El simulador proporciona información detallada en tiempo real:</p>
+                <ul class="stats-list">
+                    <li><strong>Promedio de Salud:</strong> Calcula el promedio de salud de toda la tripulación</li>
+                    <li><strong>Tripulantes Enfermos:</strong> Cuenta cuántos tripulantes tienen menos del 50% de salud
+                    </li>
+                    <li><strong>Consumo de Recursos:</strong> Rastrea el consumo diario de agua, comida y energía</li>
+                    <li><strong>Registro de Eventos:</strong> Documenta todos los eventos y acciones de cada día</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>¿Listo para la Aventura?</h2>
+            <p>Abre la consola del navegador (F12) y ejecuta el simulador para comenzar tu misión galáctica.</p>
+            <button class="btn-primary" onclick="window.location.href='#'">Iniciar Simulación</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bootcamp Full Stack JavaScript 0080 - Evaluación Módulo 03</p>
+        <p>Alumna: Macarena Espinoza Gatica</p>
+    </footer>
+
+    <script src="assets/js/simuladorMision.js"></script>
+</body>
+
+</html>
